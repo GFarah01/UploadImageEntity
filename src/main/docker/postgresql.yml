@@ -1,0 +1,11 @@
+version: '2'
+services:
+  uploadimageentity-postgresql:
+    image: postgres:12.1
+    # volumes:
+    #     - ~/volumes/jhipster/UploadImageEntity/postgresql/:/var/lib/postgresql/data/
+    environment:
+      - POSTGRES_USER=UploadImageEntity
+      - POSTGRES_PASSWORD=
+    ports:
+      - 5432:5432
